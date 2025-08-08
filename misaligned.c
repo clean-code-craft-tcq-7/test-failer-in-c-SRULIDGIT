@@ -26,10 +26,25 @@ void testPrintColorMapOutput() {
     printf("Test printColorMap output ran (manual check required).\n");
 }
 
+void printMajorColors() {
+    const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
+    int i;
+    for (i = 0; i < 5; i++) {
+        printf("%s\n", majorColor[i]);
+    }
+}
+
+void testPrintMajorColors() {
+    // This test is a placeholder. In real unit tests, you would capture stdout and compare.
+    printMajorColors();
+    printf("Test printMajorColors output ran (manual check required).\n");
+}
+
 int main() {
     printf("\nRunning color map tests...\n");
     testPrintColorMapReturnValue();
     testPrintColorMapOutput();
+    testPrintMajorColors();
     printf("All tests passed!\n");
     return 0;
 }
